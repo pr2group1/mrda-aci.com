@@ -370,16 +370,11 @@ footer a {
   }
 
   /* Headings */
-  h1, .section-title {
-    font-size: 1.4rem;
-  }
-
-  h2, .subheading {
+  h1, h2, h3,
+  .section-title,
+  .subheading {
     font-size: 1.2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
+    line-height: 1.4;
   }
 
   /* Paragraphs and list items */
@@ -389,20 +384,23 @@ footer a {
   .mission-text,
   .vision-text,
   .core-values-text,
-  .quality-policy-text {
-    font-size: 0.9rem;
+  .quality-policy-text,
+  .admin-info p,
+  .mvq-box p,
+  .announcements-container li {
+    font-size: 0.85rem;
     line-height: 1.6;
     text-align: justify;
   }
 
   /* Navigation links */
   nav a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   /* Footer */
   footer {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 15px 5%;
     text-align: center;
   }
@@ -410,7 +408,7 @@ footer a {
   footer p,
   footer a,
   footer span {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-align: center;
     width: 100%;
   }
