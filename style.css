@@ -35,13 +35,6 @@
 	max-width: 900px;
 	margin: 0 auto;
 }
-.school-logo {
-	width: 80px;
-	height: 80px;
-	object-fit: contain;
-	display: block;
-	margin: 0;
-}
 .header-content {
 	flex: 1;
 }
@@ -223,19 +216,51 @@ footer {
 	margin-bottom: 10px;
 }
 
-/*Responsive Adjustments*/
-img {
-	max-width: 100%;
-	height: auto;
+/*Spacing Adjustments*/
+	#about p {
+        text-indent: 2em;   /* Indent first line */
+        line-height: 2;     /* Double spacing */
+        margin-bottom: 1em; /* Extra space between paragraphs */
+    }
+	#administrator p {
+		text-indent: 2em;   /* Indent first line */
+		line-height: 2;     /* Double spacing */
+		margin-bottom: 1em; /* Extra space between paragraphs */
+	}
+	
+/* Responsive fixes */
+.header-flex,
+.admin-container,
+.mvq-container {
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 
-	nav ul {
-		flex-direction: column;
-	}
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-	.container {
-		flex-direction: column;
-	}
+  .mvq-container {
+    flex-direction: column;
+  }
+
+  .mvq-box {
+    width: 100%;
+  }
+
+  .admin-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .admin-photo {
+    margin: 0 auto 15px auto;
+  }
 }
