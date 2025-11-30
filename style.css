@@ -427,3 +427,23 @@ footer a {
 	width: 100%;
 	display: block;
 }
+
+/* Universal centering for key headings */
+.welcome-message,
+.announcements-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  font-weight: bold;
+}
+
+/* Optional: center their container too */
+.header,
+.announcements-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
