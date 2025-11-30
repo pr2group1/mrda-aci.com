@@ -236,28 +236,77 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Center all major containers */
-  .header-flex,
-  .mvq-container,
+  /* Force body and main to center everything */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Header layout */
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* MVQ section */
+  .mvq-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mvq-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  /* Admin section */
   .admin-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
 
-  /* Limit width and center content */
-  .mvq-box,
-  .admin-info,
-  .announcements-container,
-  main {
+  .admin-info {
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* Scale down font sizes for mobile */
+  .admin-photo {
+    margin: 0 auto 15px auto;
+  }
+
+  /* Announcements */
+  .announcements-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Font scaling */
   h1 {
     font-size: 1.6rem;
   }
@@ -276,17 +325,5 @@ footer {
     font-size: 0.95rem;
     line-height: 1.6;
     text-align: justify;
-  }
-
-  /* Adjust image spacing */
-  .admin-photo,
-  .school-logo {
-    margin: 0 auto 15px auto;
-  }
-
-  /* Navigation layout */
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
   }
 }
