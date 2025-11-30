@@ -70,7 +70,7 @@
 	height: 80px;
 	object-fit: contain;
 	display: block;
-	margin: 0 auto;
+	margin: 0;
 }
 /* School Administrator Section */
 .admin-section {
@@ -302,63 +302,30 @@ footer a {
 }
 
 @media (max-width: 768px) {
-	/* Universal font scaling */
+  /* General font scaling */
   body,
   h1, h2, h3, h4, h5, h6,
-  p, li, a, span, strong, em,
-  .section-title,
-  .subheading,
-  .about-text,
-  .mission-text,
-  .vision-text,
-  .core-values-text,
-  .quality-policy-text,
-  .admin-info p,
-  .mvq-box p,
-  .announcements-container li,
-  .announcements-container p,
-
-.welcome-message {
-    font-size: 1.2rem;
+  p, li, a, span {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
-
-  .announcements-title {
-    font-size: 1.1rem;
-  }
-
-  .announcements-list li {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-.welcome-message,
-.announcements-title {
-  text-align: center !important;
-  width: 100%;
-  margin: 0 auto 10px auto;
-}
 
   nav a {
     font-size: 0.85rem !important;
   }
 
-  footer {
-    font-size: 0.8rem !important;
-    padding: 15px 5% !important;
-    text-align: center !important;
-  }
-
   /* Header layout */
   .header-flex {
     flex-direction: column;   /* stack logo + content */
-    align-items: center;      /* center horizontally */
-    text-align: center;       /* center text inside */
+    align-items: center;
+    text-align: center;
     gap: 10px;
   }
 
   .school-logo {
     margin: 0 auto 10px auto; /* center logo on mobile */
   }
+
   .header-content {
     width: 100%;
     text-align: center;
@@ -371,25 +338,27 @@ footer a {
     align-items: center;
   }
 
-  /* Font scaling */
-  h1 {
-    font-size: 1.6rem;
+  /* Headings */
+  .welcome-message {
+    font-size: 1.2rem;
+    text-align: center !important;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    display: block;
   }
 
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
+  .announcements-title {
     font-size: 1.1rem;
+    text-align: center !important;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    display: block;
   }
 
-  p,
-  li,
-  nav a {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
+  .announcements-list li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center !important; /* ✅ center list items */
   }
 
   /* MVQ section */
@@ -423,7 +392,7 @@ footer a {
     margin: 0 auto 15px auto;
   }
 
-  /* Announcements */
+  /* Announcements container */
   .announcements-container {
     width: 90%;
     max-width: 600px;
@@ -438,8 +407,8 @@ footer a {
     text-align: center !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   footer p,
@@ -447,17 +416,13 @@ footer a {
   footer span {
     font-size: 0.85rem !important;
     line-height: 1.6 !important;
-    text-align: center !important;  /* ✅ fixed */
+    text-align: center !important; /* ✅ enforce centering */
     margin: 5px 0;
     width: 100%;
-  }
-  
-  footer {
-    font-size: 0.85rem;
-    padding: 15px 5%;
+    display: block;
   }
 
-  /* Keep "Want to enroll" and below left-aligned */
+  /* Keep "Want to enroll" and Contact left-aligned */
   #admission,
   #contact {
     text-align: left;
@@ -473,49 +438,4 @@ footer a {
   #formMessage {
     font-size: 0.95rem;
   }
-
-  .welcome-message,
-  .announcements-title {
-	font-size: 1.2rem;
-	text-align: center;
-	margin: 0 auto 10px auto;
-	width: 100%;
-	display: block;
-  }
-}
-
-/*Center key titles*/
-.welcome-message,
-.announcements-title {
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-/*Desktop and Mobile*/
-.welcome-message
-.announcements-title {
-	text-align: center;
-	margin: 0 auto 10px auto;
-	width: 100%;
-	display: block;
-}
-
-/* Universal centering for key headings */
-.welcome-message,
-.announcements-title {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto 10px auto;
-  font-weight: bold;
-}
-
-/* Optional: center their container too */
-.header,
-.announcements-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
