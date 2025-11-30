@@ -401,6 +401,15 @@ footer a {
   #formMessage {
     font-size: 0.95rem;
   }
+
+  .welcome-message,
+  .announcements-title {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 0 auto 10px auto;
+	width: 100%;
+	display: block;
+  }
 }
 
 /*Center key titles*/
@@ -408,4 +417,13 @@ footer a {
 .announcements-title {
 	text-align: center;
 	margin-bottom: 10px;
+}
+
+/*Desktop and Mobile*/
+.welcome-message
+.announcements-title {
+	text-align: center;
+	margin: 0 auto 10px auto;
+	width: 100%;
+	display: block;
 }
