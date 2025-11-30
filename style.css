@@ -259,6 +259,39 @@ footer a {
 }
 
 @media (max-width: 768px) {
+	/* Universal font scaling */
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p, li, a, span, strong, em,
+  .section-title,
+  .subheading,
+  .about-text,
+  .mission-text,
+  .vision-text,
+  .core-values-text,
+  .quality-policy-text,
+  .admin-info p,
+  .mvq-box p,
+  .announcements-container li,
+  .announcements-container p,
+  .footer p,
+  .footer a,
+  .footer span {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    text-align: justify !important;
+  }
+
+  nav a {
+    font-size: 0.85rem !important;
+  }
+
+  footer {
+    font-size: 0.8rem !important;
+    padding: 15px 5% !important;
+    text-align: center !important;
+  }
+
   /* Header layout */
   .header-flex {
     flex-direction: column;
@@ -367,38 +400,5 @@ footer a {
 
   #formMessage {
     font-size: 0.95rem;
-  }
-
-  /* Universal font scaling */
-  body,
-  h1, h2, h3, h4, h5, h6,
-  p, li, a, span, strong, em,
-  .section-title,
-  .subheading,
-  .about-text,
-  .mission-text,
-  .vision-text,
-  .core-values-text,
-  .quality-policy-text,
-  .admin-info p,
-  .mvq-box p,
-  .announcements-container li,
-  .announcements-container p,
-  .footer p,
-  .footer a,
-  .footer span {
-    font-size: 0.85rem !important;
-    line-height: 1.6 !important;
-    text-align: justify !important;
-  }
-
-  nav a {
-    font-size: 0.85rem !important;
-  }
-
-  footer {
-    font-size: 0.8rem !important;
-    padding: 15px 5% !important;
-    text-align: center !important;
   }
 }
