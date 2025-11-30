@@ -16,24 +16,27 @@
 	font-size: 1.4rem;
 }
 .announcements-list {
-	list-style: disc inside;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	display: inline-block;
+  list-style: none;         /* remove bullets */
+  margin: 0;
+  padding: 0;
+  text-align: center;       /* center list items */
+  display: block;           /* full width block */
 }
+
 .announcements-list li {
-	margin-bottom: 4px;
-	font-size: 1.05rem;
+  margin-bottom: 8px;
+  font-size: 1rem;
 }
 /* Header Flex Layout for Logo Left */
 .header-flex {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	gap: 24px;
-	max-width: 900px;
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;   /* stack logo + content */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;       /* ensure text inside is centered */
 }
 .header-content {
 	flex: 1;
@@ -336,6 +339,13 @@ footer a {
     font-size: 0.9rem;
     line-height: 1.5;
   }
+
+.welcome-message,
+.announcements-title {
+  text-align: center !important;
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
 
   nav a {
     font-size: 0.85rem !important;
