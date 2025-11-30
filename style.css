@@ -370,11 +370,11 @@ footer a {
   }
 
   /* Headings */
-  h1 {
-    font-size: 1.4rem;   /* smaller than desktop */
+  h1, .section-title {
+    font-size: 1.4rem;
   }
 
-  h2 {
+  h2, .subheading {
     font-size: 1.2rem;
   }
 
@@ -382,11 +382,17 @@ footer a {
     font-size: 1rem;
   }
 
-  /* Body text */
+  /* Paragraphs and list items */
   p,
-  li {
-    font-size: 0.9rem;   /* clean and readable */
-    line-height: 1.6;    /* more breathing room */
+  li,
+  .about-text,
+  .mission-text,
+  .vision-text,
+  .core-values-text,
+  .quality-policy-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: justify;
   }
 
   /* Navigation links */
@@ -394,18 +400,18 @@ footer a {
     font-size: 0.9rem;
   }
 
-  /* Announcements list */
-  .announcements-list li {
-    font-size: 0.9rem;
-  }
-
-  /* MVQ box text */
-  .mvq-box p {
-    font-size: 0.9rem;
-  }
-
   /* Footer */
   footer {
     font-size: 0.85rem;
+    padding: 15px 5%;
+    text-align: center;
+  }
+
+  footer p,
+  footer a,
+  footer span {
+    font-size: 0.85rem;
+    text-align: center;
+    width: 100%;
   }
 }
