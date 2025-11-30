@@ -239,8 +239,9 @@ footer {
   /* Header layout */
   .header-flex {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     gap: 10px;
+    text-align: center;
   }
 
   .header-content {
@@ -253,6 +254,27 @@ footer {
     gap: 10px;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Font scaling */
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p,
+  li,
+  nav a {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
   }
 
   /* MVQ section */
@@ -294,24 +316,27 @@ footer {
     text-align: center;
   }
 
-  /* Font scaling */
-  h1 {
-    font-size: 1.6rem;
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 0;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 1.3rem;
+  /* Keep "Want to enroll" and below left-aligned */
+  #admission,
+  #contact {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
-  h3 {
-    font-size: 1.1rem;
+  #admission h2,
+  #contact h2 {
+    text-align: left;
   }
 
-  p,
-  li,
-  nav a {
+  #formMessage {
     font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
   }
 }
