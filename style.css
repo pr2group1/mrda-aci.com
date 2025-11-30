@@ -187,15 +187,19 @@ button:hover {
 footer {
   background-color: #2a5298;
   color: #fff;
-  padding: 15px 5%;
+  padding: 20px 5%;
   font-size: 1rem;
   line-height: 1.5;
   width: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+}
+
+footer p,
+footer span,
+footer a {
+  display: block;
+  margin: 5px 0;
   text-align: center;
 }
 
@@ -326,12 +330,13 @@ footer {
   /* Footer */
   footer {
     font-size: 0.85rem;
-    padding: 12px 5%;
+    padding: 15px 5%;
   }
 
   footer p,
-  footer a,
-  footer span {
+  footer span,
+  footer a {
+	font-size: 0.85rem;
 	text-align: center;
 	width: 100%;
   }
